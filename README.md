@@ -6,7 +6,6 @@ Extensions start with their manifest. Creating a file called <b>manifest.json</b
 Introducing a background script by creating a file titled <b>background.js</b> for giving instructions to the manifest.Background scripts, and many other important components, must be registered in the manifest. Registering a background script in the manifest tells the extension which file to reference, and how that file should behave.
 <br> The extension is now aware that it includes a non-persistent background script and will scan the registered file for important events it needs to listen for.<br> This extension will need information from a persistent variable as soon as its installed. Thus Started by including a listening event for runtime.onInstalled in the background script. Inside the onInstalled listener, the extension will set a value using the storage API. This will allow multiple extension components to access that value and update it.
 <br> Most APIs, including the storage API, must be registered under the "permissions" field in the manifest for the extension to use them.
-<br>
 3. <b>The User Interface</b> :<br>
 Extensions can have many forms of a user interface, but this one is using a popup. Create and add a file titled <b>popup.html</b> to the directory, or download it here. This extension uses a button to change the background color. <br>
 Like the background script, this file needs to be designated as a popup in the manifest under<b> page_action</b>. <br>
