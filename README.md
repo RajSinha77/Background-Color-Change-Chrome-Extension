@@ -1,11 +1,9 @@
 # Background-Color-Change-Chrome-Extension
-An extension that allows the user to change the background color of any page on <a href="#">any webpage</a>
-<br>
+An extension that allows the user to change the background color of any page on <a href="#">any webpage</a></br>
 1. Create the Manifest : <br>
-Extensions start with their manifest. Creating a file called manifest.json
-<br>
+Extensions start with their manifest. Creating a file called <b>manifest.json</b>
 2. Add Instructions : <br>
-Introducing a background script by creating a file titled background.js for giving instructions to the manifest.Background scripts, and many other important components, must be registered in the manifest. Registering a background script in the manifest tells the extension which file to reference, and how that file should behave.
+Introducing a background script by creating a file titled <b>background.js</b> for giving instructions to the manifest.Background scripts, and many other important components, must be registered in the manifest. Registering a background script in the manifest tells the extension which file to reference, and how that file should behave.
 <br> The extension is now aware that it includes a non-persistent background script and will scan the registered file for important events it needs to listen for.<br> This extension will need information from a persistent variable as soon as its installed. Thus Started by including a listening event for runtime.onInstalled in the background script. Inside the onInstalled listener, the extension will set a value using the storage API. This will allow multiple extension components to access that value and update it.
 <br> Most APIs, including the storage API, must be registered under the "permissions" field in the manifest for the extension to use them.
 <br>
@@ -30,4 +28,4 @@ The manifest will need the <b>activeTab</b> permission to allow the extension te
  5. Give User Options : <br>
   Including an options page gives users more control over the extension's functionality, further customizing their browsing experience.
 
-creating a file in the directory called options.html 
+creating a file in the directory called <b>options.html</b> 
