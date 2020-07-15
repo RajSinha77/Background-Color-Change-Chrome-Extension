@@ -12,8 +12,7 @@ Like the background script, this file needs to be designated as a popup in the m
 Designation for toolbar icons is also included under page_action in the default_icons field. <br>
 Extensions also display images on the extension management page, the permissions warning, and favicon. These images are designated in the manifest under icons.<br>
 If the extension is reloaded at this stage, it will include a grey-scale icon, but will not contain any functionality differences. Because page_action is declared in the manifest, it is up to the extension to tell the browser when the user can interact with <b>popup.html</b>.<br>
-Adding declared rules to the background script with the declarativeContent API within the <b>runtime.onInstalled listener</b> event.
-  <br>
+Adding declared rules to the background script with the declarativeContent API within the <b>runtime.onInstalled listener</b> event.<br>
 The extension will need permission to access the <b>declarativeContent API</b> in its manifest.
   <br>The browser will now show a full-color page action icon in the browser toolbar when users navigate to a URL that contains <b>"developer.chrome.com"</b>. When the icon is full-color, users can click it to view <b>popup.html</b>.
   <br>The last step for the popup UI is adding color to the button. Thus Created and added a file called <b>popup.js</b><br>
