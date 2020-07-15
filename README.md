@@ -19,8 +19,7 @@ The extension will need permission to access the <b>declarativeContent API</b> i
  4. <b>Layer Logic </b>:
   <br> The extension now knows the popup should be available to users on <b>developer.chrome.com</b> and displays a colored button, but needs logic for further user interaction. Updating <b>popup.js</b> <br>
   The updated code adds an onclick event the button, which triggers a <b>programatically injected content script</b>. This turns the background color of the page the same color as the button. Using programmatic injection allows for user-invoked content scripts, instead of auto inserting unwanted code into web pages.<br>
-The manifest will need the <b>activeTab</b> permission to allow the extension temporary access to the <b>tabs API</b>. This enables the extension to call <b>tabs.executeScript</b>.
-  <br>
+The manifest will need the <b>activeTab</b> permission to allow the extension temporary access to the <b>tabs API</b>. This enables the extension to call <b>tabs.executeScript</b>.<br>
  5. <b>Give User Options</b> : <br>
   Including an options page gives users more control over the extension's functionality, further customizing their browsing experience.<br>
   creating a file in the directory called <b>options.html</b> 
