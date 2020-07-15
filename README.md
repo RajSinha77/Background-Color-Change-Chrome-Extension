@@ -21,11 +21,11 @@ The extension will need permission to access the <b>declarativeContent API</b> i
   <br>The browser will now show a full-color page action icon in the browser toolbar when users navigate to a URL that contains <b>"developer.chrome.com"</b>. When the icon is full-color, users can click it to view <b>popup.html</b>.
   <br>The last step for the popup UI is adding color to the button. Thus Created and added a file called <b>popup.js</b><br>
  4. Layer Logic :
-  <br> The extension now knows the popup should be available to users on <b>developer.chrome.com<b> and displays a colored button, but needs logic for further user interaction. Updating <b>popup.js</b> 
+  <br> The extension now knows the popup should be available to users on <b>developer.chrome.com</b> and displays a colored button, but needs logic for further user interaction. Updating <b>popup.js</b> 
   <br>
-  The updated code adds an onclick event the button, which triggers a <b>programatically injected content script<b>. This turns the background color of the page the same color as the button. Using programmatic injection allows for user-invoked content scripts, instead of auto inserting unwanted code into web pages.
+  The updated code adds an onclick event the button, which triggers a <b>programatically injected content script</b>. This turns the background color of the page the same color as the button. Using programmatic injection allows for user-invoked content scripts, instead of auto inserting unwanted code into web pages.
 
-The manifest will need the <b>activeTab<b> permission to allow the extension temporary access to the <b>tabs API</b>. This enables the extension to call <b>tabs.executeScript</b>.
+The manifest will need the <b>activeTab</b> permission to allow the extension temporary access to the <b>tabs API</b>. This enables the extension to call <b>tabs.executeScript</b>.
   <br>
  5. Give User Options : <br>
   Including an options page gives users more control over the extension's functionality, further customizing their browsing experience.
