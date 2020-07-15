@@ -1,6 +1,6 @@
 # Background-Color-Change-Chrome-Extension
 An extension that allows the user to change the background color of any page on <a href="#">any webpage</a></br>
-just put the URL of the webpage for which color is to be changed in pageUrl: {hostEquals: 'https://www.____com'}, in background.js file
+just put the URL of the webpage for which color is to be changed in <b>pageUrl: {hostEquals: 'https://www.____com'}</b>, in <b>background.js</b> file
 1. <b>Create the Manifest</b> : <br>
 Extensions start with their manifest. Creating a file called <b>manifest.json</b>
 2. <b>Add Instructions</b> : <br>
