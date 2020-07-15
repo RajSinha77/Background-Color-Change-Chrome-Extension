@@ -1,5 +1,5 @@
 # Background-Color-Change-Chrome-Extension
-An extension that allows the user to change the background color of any page on <a href="https://developer.chrome.com/">developer.chrome.com</a>
+An extension that allows the user to change the background color of any page on <a href="#">any webpage</a>
 <br>
 1. Create the Manifest : <br>
 Extensions start with their manifest. Creating a file called manifest.json
@@ -17,8 +17,8 @@ Extensions also display images on the extension management page, the permissions
 If the extension is reloaded at this stage, it will include a grey-scale icon, but will not contain any functionality differences. Because page_action is declared in the manifest, it is up to the extension to tell the browser when the user can interact with popup.html.<br>
 Adding declared rules to the background script with the declarativeContent API within the <b>runtime.onInstalled listener</b> event.
   <br>
-The extension will need permission to access the <b>declarativeContent API<b> in its manifest.
-  <br>The browser will now show a full-color page action icon in the browser toolbar when users navigate to a URL that contains <b>"developer.chrome.com"<b>. When the icon is full-color, users can click it to view <b>popup.html<b>.
+The extension will need permission to access the <b>declarativeContent API</b> in its manifest.
+  <br>The browser will now show a full-color page action icon in the browser toolbar when users navigate to a URL that contains <b>"developer.chrome.com"</b>. When the icon is full-color, users can click it to view <b>popup.html</b>.
   <br>The last step for the popup UI is adding color to the button. Thus Created and added a file called <b>popup.js<b><br>
  4. Layer Logic :
   <br> The extension now knows the popup should be available to users on <b>developer.chrome.com<b> and displays a colored button, but needs logic for further user interaction. Updating <b>popup.js<b> 
